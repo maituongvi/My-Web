@@ -1,0 +1,222 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box; /* tính padding vào thành phần*/
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: fontviet;
+    src: url(../font/pala.ttf);
+  }
+  @font-face {
+    font-family: SignWriter;
+    src: url(../font/UTM\ A&S\ Signwriter.ttf);
+  }
+
+*{
+    font-family:  serif, Georgia, Times, 'Times New Roman';
+    text-align: center;
+}
+
+/* Tiêu đề */
+
+.tieude{
+    display:flex;
+}
+.tieude-trai{
+    width: 25%;
+    display: flex;
+    margin-top: 15px;
+}
+.tieude-giua{
+    width: 60%;
+    align-content: center;
+    padding-right: 150px
+
+}
+.tieude-phai{
+    width: 15%;
+    align-content: center;
+    margin-top: 15px;
+}
+nav ul li{
+    list-style-type: none;
+    display: block;
+ 
+}
+
+nav.thanhpho ul li a:hover{
+    color:aqua;
+}
+nav.thanhpho ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    
+  
+}
+nav.thanhpho >ul li {
+    border-right: 0.5px solid black;
+}
+nav.thanhpho >ul li:last-child{
+    border-right: none;
+}
+nav ul{
+    display: flex;
+    vertical-align: middle;
+    margin-block-start: 0px;
+}
+
+img{
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    
+}
+form{
+    display: block;
+}
+.searchInput {
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    background-color: #fefefe;
+    border: solid 1px #a7a7a7;
+    padding: 8px 0 8px 15px;
+    width: 100%;
+   
+}
+
+.btnSearch {
+    font-size: 0;
+    border: none;
+    background: url(..//images/search_icon.png);
+    
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+
+.searchHeader .searchInput{
+    text-align: left;
+}
+
+
+/* NAV Header */
+.menu{
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+}
+
+nav.header-nav ul li a{
+    color: black;
+ 
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+ 
+}
+nav.header-nav ul li{
+    border-right: 1px solid white;
+    padding: 10px 15px ;
+    width: 200px;
+}
+
+nav.header-nav ul li:hover{
+    background-color: thistle;
+}
+
+ul.LoaiSP{
+    
+   
+    margin-bottom: 0px;
+    /* justify-content: center; căn chỉnh nội dụng ở giữa */
+
+}
+ul.LoaiSP li:last-child{
+    border-right: none;
+}
+header.header{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1020;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.hienthianh{
+    width: 100%;
+    
+}
+
+.hienthianh>img{
+    margin-top: 93px;
+    
+}
+section.section-row1{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+div.item1{
+    width: 50%;
+
+    padding: 0 10px;
+
+}
+
+p.TuiHeader{
+    margin: 0px;
+    font-size: xxx-large;
+    font-family: SignWriter;
+    font-size: 3vw; /*vw là đơn vị co giãn theo kích thước màn hình */
+}
+div.item1 >a{
+    color: black;
+
+}
+
+div.row{
+    border-bottom: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.row3{
+    width: 100%;
+}
+
+section.section-row1 .item2{
+    display: block;
+    width: 25%;
+    padding: 0 10px;
+
+}
+.xemthem{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 20px ;
+    font-family: cursive;
+}
+
+p.maumoi{
+    font-family: cursive;
+}
+.section-row3{
+    display: flex;
+}
+
+
+
+
+
