@@ -1,0 +1,559 @@
+@charset "utf-8";
+body{
+	font-family: sans-serif;
+	margin: 0;
+}
+.header{
+	position: fixed;
+	width: 100%;
+	display: block;
+	z-index: 1000;
+
+}
+.Title{
+	background-color: white;
+	align-content: center;
+}
+.tieude-giua{
+    width: 10%;
+    align-content: center;
+    margin: auto;
+}
+.Menu>ul>li>a{
+	border-bottom: 2px solid #ffff;
+}
+.Menu >ul>li>a{
+	text-decoration: none;/*xoa gach */
+	text-align: center;
+	display: block;
+	color: black;
+	font-size: 14px;
+	padding:5px;
+}
+.Menu{
+
+	border-bottom: 1px solid grey;}
+.Menu > ul>li>a:hover{
+	/*background-color: thistle;*/
+	border-bottom: 2px solid black;
+	color: black;
+	font-weight: bold;
+	
+}
+
+.Menu>ul {
+ 	list-style-type: none;
+ 	margin:auto;
+ 	display: flex;
+ 	width: 80%
+}
+
+.Menu>ul>li{
+    padding: 10px 15px ;
+    width: 14%;
+    border-right: none;
+    text-align: center;
+    padding: 0;
+
+
+}
+
+/*Phần bên dưới Menu*/
+.dropdownContent {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #ffff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-radius: 0px 0px 20px 20px;
+  left: 0px;
+}
+
+.dropdownContent section {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+.dropdownContent section>div.dropdownContent1{
+	width: 20%;
+	padding: 0;
+	margin: 0;
+}
+
+.dropdownContent section>div.dropdownContent1>h2{
+	margin: 0;
+	padding: 0;
+	font-size: 1.25vw;
+}
+
+.dropdownContent section>div.dropdownContent1>li{
+	width: 60%;
+	text-align: left;
+	margin: auto;
+}
+.dropdownContent section>div.dropdownContent1>li.drop1{
+	width: 80%;
+	text-align: left;
+	margin: auto;
+}
+.dropdownContent section>div.dropdownContent1>li>a{
+	
+	color: black;
+	text-decoration: none;
+}
+.dropdownContent section>div.dropdownContent1>li>a:hover{
+	
+	text-decoration: underline;
+}
+
+.dropImg>a>img{
+	width: 80%;
+	height: 20vw;
+	margin: auto;
+	border-radius: 10px;
+}
+.dropImg1>a>img{
+	width: 150%;
+	height: 20vw;
+	margin: auto;
+	border-radius: 10px;
+}
+.dropImg2>a>img{
+	width: 400%;
+	height: 15vw;
+	margin: auto;
+	border-radius: 10px;
+}
+a>img:hover{
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdownContent section>div.dropdownContent1>h3{
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: 1vw;
+	color: grey;
+	font-weight: normal;
+}
+/*
+.dropdownContent section:hover {
+	background-color: #ddd;
+
+    border-radius: 0px 0px 20px 20px;
+}
+*/
+
+
+.Menu > ul>li:hover .dropdownContent {
+	display: block;
+}
+
+.LoaiSP{
+	margin: 0 auto;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+
+}
+nav{
+	background-color: white;
+	line-height:25px;
+}
+
+.form>li>div label{
+	display: block;
+	color: grey;
+	font-size: 14px;
+	padding-bottom: 3px;
+}
+input{
+	height: 30px;
+	width: 300px;
+	border:  1px solid black;
+	font-style: italic;
+}
+input:hover{
+	cursor: text;
+}
+
+.form > li > div{
+	padding-top: 20px;
+}
+div.leftPro{
+	border-right: 1px solid grey;
+	padding-right: 30px;
+	z-index: 1;
+
+}
+div.left{
+	border-right: 1px solid grey;
+	padding-right: 30px;
+
+}
+h2{
+	padding-left: 50px;
+	font-size: 25px;
+}
+.remember input{
+	width: 15px;
+	height: 15px;
+	border: none;
+	padding-left: : 10px;
+	margin: 0px;
+	font-size: 10px;
+
+
+}
+.remember>input:hover{
+	cursor: pointer;
+}
+.remember {
+	font-size: 13px;
+	padding-right: 80px;
+	margin-left: 40px;
+}
+
+.forgotpass {
+	font-size: 13px;
+}
+.btnSignIn{
+	background-color: black;
+	width: 150px;
+	height: 40px;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+.btnSignIn> span>a{
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.btnSignIn:hover{
+	background-color: grey;
+	cursor: pointer;
+}
+div.right{
+	width: 50%;
+}
+
+
+section.content{
+	 margin: 0 auto; /* chỉnh lề giao diện tự động */
+     width: 800px;
+     padding-top: 150px;
+     padding-bottom: 50px;
+     display: flex;
+}
+h4{
+	font-weight: normal;
+	color: grey;
+	font-size: 16px;
+	font-style: italic;
+	padding-left: 20px;
+	margin-top: 40px;
+}
+.right > ul> li{
+	color: grey;
+	font-size: 13px;
+
+}
+
+
+.footer > ul > li > h2{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+	font-size: 18px;
+}
+
+.footer { 
+	background-color: black; 
+	height: 300px;
+	color: white;
+}
+.footer >ul{
+	padding: 0;
+ 	margin:0;
+ 	display: flex;
+
+}
+.footer >ul>li{
+	width: 33%;
+}
+.footer >ul>li>img{
+	width: 50%;
+}
+.footer >ul>li>ul{
+	width: 50%;
+}
+.footer li{
+	list-style-type: none;
+}
+.linkConnection{
+	display: flex;
+
+}
+.linkConnection > li{
+	padding-left: 15px;
+}
+.info{
+	font-size: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+img:hover{
+	cursor: pointer;
+}
+ul>li>img{
+	padding-left: 60px;
+}
+
+
+/*Product*/
+
+section.content1{
+	 /*margin: 0 auto;  chỉnh lề giao diện tự động */
+     width: 100%;
+     padding-top: 150px;
+     padding-bottom: 30px;
+     margin: 50px;
+     
+	 display: flex;
+	 margin: auto;
+}
+section.content1 img{
+	z-index: -1;
+}
+.left>div>h4{
+	font-size: 20px;
+	margin: auto;
+	padding-left: 100px;
+	font-weight: bold;
+}
+.left>div>h4:hover{
+	color: red;
+}
+.content1>div.left{
+	width: 70%;
+	padding-bottom: 100px;
+}
+
+.content1>ul{
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+.content1>div.right>ul>h1{
+	border-bottom: 2px solid black;
+	font-size: 25px;
+}
+.right>div>h2{
+	color: red;
+	font-size: 40px;
+	padding-top: 20px;
+	margin-top: 0px;
+
+}
+.content1>div.right>ul>li{
+	font-size: 20px;
+}
+.content1>div.right>ul{
+	margin: 10px;
+	margin-bottom: 30px;
+}
+span.ship{
+	border-bottom: 1px solid black; 
+}
+.right{
+	width: 30%;
+	padding-right: 50px;
+}
+
+div.item{
+	width: 60%;
+	margin: auto;
+}
+.content1>div>ul>div{
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+.slideshow-container {
+  
+  position: relative;
+  padding-top: 20px;
+}
+.slideshow-container>img{
+	z-index: -1;
+}
+.mySlides {
+  display: none;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*Su kien re chuot len btn*/
+.prev:hover, .next:hover {
+  background-color: grey;
+}
+
+/* Caption text */
+
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+
+
+
+
+
+
+/*SignUp*/
+.itemSignUp>img{
+	width: 100%;
+	height: 100%;
+}
+.introduce{
+	margin: 0;
+	padding: 0;
+}
+.rightSignUp input{
+	border:none;
+	border-bottom: 1px solid grey;
+	font-size: 16px;
+	height: 30px;
+}
+.rightSignUp div{
+	margin: 20px;
+}
+.rightSignUp {
+	width: 70%;
+}
+
+.rightSignUp button{
+	color: white;
+	font-weight: bold;
+}
+
+
+
+
+/*Shoes*/
+.top{
+	margin: 0;
+	padding: 0;
+}
+.top>img{
+	width: 100%;
+	height: 25vw;
+	margin-top: 100px;
+}
+.contentListPro{
+	height: 100%;
+	margin-bottom: 10px;
+}
+.contentListPro>div.top>img{
+	width: 100%;
+
+}
+
+.products{
+	display: flex;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	flex-wrap: wrap;
+}
+
+.product{
+	width: 18%;
+	padding-left: 0px;
+	margin: auto;
+	padding:1px;
+	border:1px solid #ffff;	
+	
+}
+.product:hover{
+	border: 1px solid black;
+}
+
+div.Imgpro>a>img{
+	width: 100%;
+	height: 22vw;
+}
+
+div.Title>h3{
+	font-size: 14px;
+	margin: 0;
+}
+div.Title>li{
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: grey;
+}
+
+a.blue>span>img{
+	width: 25px;
+	height: 25px;
+}
+.contentListPro>div>h1{
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	border-bottom: 1px solid black;
+}
+
+
+
+
+

@@ -3,6 +3,7 @@
     box-sizing: border-box; /* tính padding vào thành phần*/
     margin: 0px;
     padding: 0px;
+    font-family: Arial;
 }
 @font-face {
     font-family: fontviet;
@@ -22,6 +23,7 @@
 
 .tieude{
     display:flex;
+    background-color: #fff;
 }
 .tieude-trai{
     width: 25%;
@@ -47,6 +49,7 @@ nav ul li{
 
 nav.thanhpho ul li a:hover{
     color:aqua;
+    font-family: sans-serif;
 }
 nav.thanhpho ul li a{
     color: black;
@@ -98,14 +101,177 @@ form{
     right:20px;
     top: 20px;
 }
-
+.btnSearch:hover{
+    cursor: pointer;
+}
+.searchInput:hover{
+    cursor: text;
+}
 .searchHeader .searchInput{
     text-align: left;
 }
 
+/*Header thanh menu đã chỉnh sửa*/
+.header{
+    width: 100%;
+    position: fixed;
+}
+
+.Menu>ul>li>a{
+    border-bottom: 2px solid #ffff;
+}
+.Menu >ul>li>a{
+    font-family: sans-serif;
+    text-decoration: none;/*xoa gach */
+    text-align: center;
+    display: block;
+    color: black;
+    font-size: 14px;
+    padding:5px;
+}
+.Menu{
+
+    border-bottom: 1px solid grey;}
+.Menu > ul>li>a:hover{
+    /*background-color: thistle;*/
+    border-bottom: 2px solid black;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.Menu>ul {
+    list-style-type: none;
+    margin:auto;
+    display: flex;
+    width: 80%
+}
+
+.Menu>ul>li{
+    padding: 10px 15px ;
+    width: 14%;
+    border-right: none;
+    text-align: center;
+    padding: 0;
+
+
+}
+
+/*Phần bên dưới Menu*/
+.dropdownContent {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background-color: #ffff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+  left: 0px;
+}
+
+.dropdownContent section {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+}
+.dropdownContent section>div.dropdownContent1{
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdownContent section>div.dropdownContent1>h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.25vw;
+}
+
+.dropdownContent section>div.dropdownContent1>li{
+    width: 60%;
+    text-align: left;
+    margin: auto;
+}
+.dropdownContent section>div.dropdownContent1>li.drop1{
+    width: 80%;
+    text-align: left;
+    margin: auto;
+}
+.dropdownContent section>div.dropdownContent1>li>a{
+    
+    color: black;
+    text-decoration: none;
+}
+.dropdownContent section>div.dropdownContent1>li>a:hover{
+    
+    text-decoration: underline;
+}
+
+.dropImg>a>img{
+    width: 80%;
+    height: 20vw;
+    margin: auto;
+    border-radius: 10px;
+}
+.dropImg1>a>img{
+    width: 150%;
+    height: 20vw;
+    margin: auto;
+    border-radius: 10px;
+}
+.dropImg3>a>img{
+    width: 400%;
+    height: 15vw;
+    margin: auto;
+    border-radius: 10px;
+}
+.dropdownContent section>div.dropdownContent2{
+    width: 80%;
+    padding: 0;
+    margin: 0;
+}
+a>img:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.dropdownContent section>div.dropdownContent1>h3{
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: 1vw;
+    color: grey;
+    font-weight: normal;
+}
+/*
+.dropdownContent section:hover {
+    background-color: #ddd;
+
+    border-radius: 0px 0px 20px 20px;
+}
+*/
+
+
+.Menu > ul>li:hover .dropdownContent {
+    display: block;
+}
+
+.LoaiSP{
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+
+}
+nav{
+    background-color: white;
+    line-height:25px;
+}
+
 
 /* NAV Header */
-.menu{
+/*.menu{
     text-align: center;
 }
 .menu ul{
@@ -136,7 +302,7 @@ ul.LoaiSP{
    
     margin-bottom: 0px;
     /* justify-content: center; căn chỉnh nội dụng ở giữa */
-
+/*
 }
 ul.LoaiSP li:last-child{
     border-right: none;
@@ -152,7 +318,7 @@ header.header{
     background-color: #fff;
     line-height: 1.5;
     font-size: 14px;
-}
+}*/
 .hienthianh{
     width: 100%;
     
