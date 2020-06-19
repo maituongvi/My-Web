@@ -5,7 +5,8 @@
         <title>Merci-Accessories</title>
         <link href="css/style1.css" rel="stylesheet"/>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
     </head>
     <body>
         <header class="header">
@@ -14,8 +15,8 @@
                 <div class="tieude-trai">
                     <nav class="thanhpho">
                         <ul>
-                            <li><a href="#">Bình Dương</a></li>
-                            <li><a href="#">Thành phố HCM</a></li>
+                            <li><a href="About1.html">Bình Dương</a></li>
+                            <li><a href="About.html">Thành phố HCM</a></li>
                         </ul>
                     </nav>
                     
@@ -27,7 +28,10 @@
                 <div class="tieude-phai ">
                     <from class="searchHeader">
                         <input type="hidden"/>
-                        <input type="text" class="searchInput" placeholder="Bạn cần tìm gì ..."/>
+                        <input type="text" class="searchInput"  onfocus="this.value=''" autocomplete="off" id="productId" onKeyUp="suggestProduct(this)" type="text" placeholder="Tìm kiếm sản phẩm...." name="search">
+                                        
+                        <ul id="suggestProductId">
+                        </ul>
                         <input type="submit" class="btnSearch"/>
 
 
@@ -39,15 +43,15 @@
 
             <nav class="Menu" id="myHeader">
                 <ul class="LoaiSP">
-                    <li ><a href="D:/HTMLWeb/My-Web/Home.html">TRANG CHỦ</a>
+                    <li ><a href="Home.html">TRANG CHỦ</a>
                         <div class="dropdownContent">
                             <section>
                                 <div class="dropdownContent1">
                                     <h2>TÙY CHỌN THỂ LOẠI</h2>
-                                    <li><a href="D:/HTMLWeb/My-Web/Shoes.html">Giày</a></li>
-                                    <li><a href="D:/HTMLWeb/My-Web/Accessories.html">Phụ kiện</a></li>
-                                    <li><a href="D:/HTMLWeb/My-Web/Bag.html">Túi</a></li>
-                                    <li><a href="D:/HTMLWeb/My-Web/NewProduct.html">Tất cả</a></li>
+                                    <li><a href="Shoes.html">Giày</a></li>
+                                    <li><a href="Accessories.html">Phụ kiện</a></li>
+                                    <li><a href="Bag.html">Túi</a></li>
+                                    <li><a href="NewProduct.html">Tất cả</a></li>
                                 </div>
                                 
                                 <div class="dropdownContent2">
@@ -62,19 +66,19 @@
                         </div>
                     </li>
                     <li>
-                        <a href="D:/HTMLWeb/My-Web/NewProduct.html">HÀNG MỚI VỀ</a>
+                        <a href="NewProduct.html">HÀNG MỚI VỀ</a>
                         <div class="dropdownContent">
                             <section>
                                 <div class="dropdownContent1">
                                     <h2>TÙY CHỌN THỂ LOẠI</h2>
-                                    <li><a href="D:/HTMLWeb/My-Web/Shoes.html">Giày</a></li>
-                                    <li><a href="D:/HTMLWeb/My-Web/Accessories.html">Phụ kiện</a></li>
-                                    <li><a href="D:/HTMLWeb/My-Web/Bag.html">Túi</a></li>
-                                    <li><a href="D:/HTMLWeb/My-Web/NewProduct.html">Tất cả</a></li>
+                                    <li><a href="Shoes.html">Giày</a></li>
+                                    <li><a href="Accessories.html">Phụ kiện</a></li>
+                                    <li><a href="Bag.html">Túi</a></li>
+                                    <li><a href="NewProduct.html">Tất cả</a></li>
                                 </div>
                                 <div class="dropdownContent1">
                                     <h2>BỘ SƯU TẬP</h2>
-                                    <li><a href="D:/HTMLWeb/My-Web/NewProduct.html">Hè 2020</a></li>
+                                    <li><a href="NewProduct.html">Hè 2020</a></li>
                                 </div>
                                 <div class="dropdownContent1">
                                     <h2>XU HƯỚNG</h2>
@@ -104,7 +108,7 @@
                         </div>
                     </li>
                     <li class="sub">
-                        <a href="D:/HTMLWeb/My-Web/Bag.html">TÚI</a>
+                        <a href="Bag.html">TÚI</a>
                         <div class="dropdownContent">
                             <section>
                                 <div class="dropdownContent1">
@@ -152,7 +156,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="D:/HTMLWeb/My-Web/Shoes.html">GIÀY</a>
+                        <a href="Shoes.html">GIÀY</a>
                         <div class="dropdownContent">
                             <section>
                                 <div class="dropdownContent1">
@@ -196,7 +200,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="D:/HTMLWeb/My-Web/Accessories.html">PHỤ KIỆN</a>
+                        <a href="Accessories.html">PHỤ KIỆN</a>
                         <div class="dropdownContent">
                             <section>
                                 <div class="dropdownContent1">
@@ -242,7 +246,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="D:/HTMLWeb/My-Web/Promotion.html">GIẢM GIÁ</a>
+                        <a href="Promotion.html">GIẢM GIÁ</a>
                         <div class="dropdownContent">
                             <section>
                                 <div class="dropdownContent1">
@@ -282,7 +286,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="D:/HTMLWeb/My-Web/SingnIn.html">TÀI KHOẢN</a>
+                        <a href="SingnIn.html">TÀI KHOẢN</a>
 
                     </li>
                     
@@ -296,7 +300,7 @@
         
 
         <div class="hienthianh">
-            <img src="images/juno.jpg" alt="Hình ảnh quảng cáo">
+            <img src="images/trangchu.png" alt="Hình ảnh quảng cáo">
         </div>
 
 
@@ -364,7 +368,64 @@
        
     </body>
     <footer>
-        
+        <nav class="footer">
+            <ul>
+                <li>
+                    <h2>THÔNG TIN LIÊN HỆ</h2>
+                    <div class="info">
+                        <p><span>Địa chỉ: 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
+                        <p><span>Điện thoại: 0788707993</span><span><br></span></p>
+                        <p><span>Email: hoanguyenthimy99@gmail.com</span></p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <h2>PHƯƠNG THỨC THANH TOÁN</h2>
+                    <ul class="linkConnection">
+                        <img src="icon/method.png" alt="anhthe"><br>
+                    </ul>
+                    
+                </li>
+                <li>
+                    <h2>LIÊN KẾT VỚI CHÚNG TÔI</h2>
+                    <ul class="linkConnection">
+                        <li><a href="http://google.com" target="_blank"><img src="icon/google.png" alt="google"></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><img src="icon/face.png" alt="face"></a></li>
+                        <li><a href="http://twitter.com" target="_blank"><img src="icon/twitter.png" alt="twitter"></a></li>
+                        <li><a href="http://skype.com" target="_blank"><img src="icon/sky.png" alt="skype"></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
 
     </footer>
+     <button class="btnScroll"  id="scrollup">
+        <p class="maumoi">Go to top <img src="icon/imgTop1.png"></p>
+
+     </button>
+    
+     <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+     <script type="text/javascript" src="js/javaScripts.js"></script>
+<!--      <script>
+
+       
+        
+       //Get the button:
+        mybutton = document.getElementById("btnScroll");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            // Xét btnScroll hiện lên khi thanh trượt lớn hơn 30
+          if (document.documentElement.scrollTop > 1500) {
+            btnScroll.style.display = "block";
+          } else {
+            btnScroll.style.display = "none";
+          }
+        }
+
+        $('#btnScroll').click( function(){
+            $('body,html').animate({scrollTop:0},700);
+        })
+     </script> -->
 </html>

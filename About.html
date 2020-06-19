@@ -2,42 +2,20 @@
 <html>
 	<header>
 		<meta charset="utf-8">
-		<title>Sign Up</title>
+		<title>About</title>
 		<link rel="stylesheet"  href="css/Styles.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function(){
-			  $("#newPro").click(function(){
-			    $("#MoreNewPro").toggle();
-			  });
-			});
-			
-		</script>
-		<style>
-			.sticky {
-			  position: fixed;
-			  top: 0;
-			  width: 100%;
+	
+		
+		<style > 
+			body{
+				 background-image: url("https://i.pinimg.com/originals/97/ce/51/97ce51d34d4114dcd9f6cb1b4643c18c.jpg");
 			}
 		</style>
-		<script>
-			window.onscroll = function() {myFunction()};
-
-			var header = document.getElementById("#myHeader");
-			var sticky = header.offsetTop;
-
-			function myFunction() {
-			  if (window.pageYOffset > sticky) {
-			    header.classList.add("sticky");
-			  } else {
-			    header.classList.remove("sticky");
-			  }
-			}
-			</script>
 	</header>
 	<body>
-		<section class="header">
+		<section class="header" style="background-color: unset;">
 			<nav class="Title">                
 				<div class="tieude-giua">
 	                <img src="images/logo.png" alt="logoMerci"/>
@@ -64,7 +42,7 @@
 						    		</div>
 						    	</div>
 						    	
-						</section>
+							</section>
 						</div>
 	                </li>
 	                <li>
@@ -110,7 +88,6 @@
 						</div>
 	                </li>
 	                <li class="sub">
-	                    <a href="Bag.html">TÚI</a>
 	                    <div class="dropdownContent">
 						    <section>
 						    	<div class="dropdownContent1">
@@ -295,98 +272,46 @@
 	            </ul>
 	    
             </nav>
-		</section>
-		
-		<section class="content">
-			<div class="left">
-				<div class="itemSignUp">
-					<img src="images/signUpImage.jpg" alt="product">
-				</div>
-				<h4 class="introduce">
-					<ul>
-						<li>Tận hưởng lợi ích từ Chương trình khách hàng thân thiết của MERCI</li>
-						<li>Nhận thông tin mới từ MERCI</li>
-						<li>Tạo một danh sách mong muốn</li>
-						<li>Tăng tốc thanh toán</li>
-						<li>Thực hiện theo đơn đặt hàng và trả lại</li>
-					</ul>
-				</h4>
-			</div>
-	
-			<div class="rightSignUp">
-				<h2>TẠO TÀI KHOẢN MỚI</h2>
-				<ul class="form">
+		</section> 
+		<section class="map" style="display: flex; padding-top: 100px; width: 80%; margin:auto;">
+			<nav style="width: 30%; background-color: unset;margin-top:5vw;">
+				<ul>
 					<li>
-						<div>
-							<input class="name" type="text" name="email" placeholder="Họ và tên" id="mail" title="Email">
+						<h2>THÔNG TIN LIÊN HỆ</h2>
+						<div class="info">
+							<p><span><h3>371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh</h3></span></p>
+			                <p><span>Điện thoại: 0788707993</span><span><br></span></p>
+			                <p><span>Email: hoanguyenthimy99@gmail.com</span></p>
 						</div>
+						
 					</li>
+					
 					<li>
-						<div>
-							<input class="phone" type="text" name="password" id="pass" placeholder="Số điện thoại" title="phone">
-						</div>
+						
+						<ul class="linkConnection">
+		                    <li><a href="http://google.com" target="_blank"><img src="icon/google.png" alt="google"></a></li>
+		                    <li><a href="https://www.facebook.com" target="_blank"><img src="icon/face.png" alt="face"></a></li>
+		                    <li><a href="http://twitter.com" target="_blank"><img src="icon/twitter.png" alt="twitter"></a></li>
+		                    <li><a href="http://skype.com" target="_blank"><img src="icon/sky.png" alt="skype"></a></li>
+	                	</ul>
 					</li>
-					<li>
-						<div>
-							<input class="address" type="text" name="password" id="pass" placeholder="Địa chỉ" title="Mật khẩu">
-						</div>
-					</li>
-					<li>
-						<div>
-							<input class="password" type="text" name="password" id="pass" placeholder="Email" title="Mật khẩu">
-						</div>
-					</li>
-					<li>
-						<div>
-							<input class="password" type="password" name="password" id="pass" placeholder="Nhập mật khẩu" title="Mật khẩu">
-						</div>
-					</li>
-					<li>
-						<div>
-							<input class="password" type="password" name="password" id="pass" placeholder="Nhập lại mật khẩu" title="Mật khẩu">
-						</div>
-					</li>
-				</ul>
-				
-				<div class="clickSignIn">
-					<button class="btnSignIn" >
-						<span >Đăng Ký</span>
-					</button>
-				</div>
-				
+			</ul>
+			</nav>
+			
+			<div style="margin-top: 20px; ">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4323.285416606182!2d106.6773293382176!3d10.81614441484894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1f241211f%3A0xc9ef195798144b1f!2zxJDhuqFpIGjhu41jIE3hu58gVFAuSENN!5e0!3m2!1svi!2s!4v1592399799312!5m2!1svi!2s" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 			</div>
-		
+			
+			
+			
+			
 		</section>
+		
+		
 	</body>
 	<footer>
-		<nav class="footer">
-			<ul>
-				<li>
-					<h2>THÔNG TIN LIÊN HỆ</h2>
-					<div class="info">
-						<p><span>Địa chỉ: 371 Nguyễn Kiệm, Phường 3, Quận Gò Vấp, Thành phố Hồ Chí Minh</span></p>
-		                <p><span>Điện thoại: 0788707993</span><span><br></span></p>
-		                <p><span>Email: hoanguyenthimy99@gmail.com</span></p>
-					</div>
-					
-				</li>
-				<li>
-					<h2>PHƯƠNG THỨC THANH TOÁN</h2>
-					<div></div>
-					<img src="icon/method.png" alt="anhthe"><br>
-				</li>
-				<li>
-					<h2>LIÊN KẾT VỚI CHÚNG TÔI</h2>
-					<ul class="linkConnection">
-	                    <li><a href="http://google.com" target="_blank"><img src="icon/google.png" alt="google"></a></li>
-	                    <li><a href="https://www.facebook.com" target="_blank"><img src="icon/face.png" alt="face"></a></li>
-	                    <li><a href="http://twitter.com" target="_blank"><img src="icon/twitter.png" alt="twitter"></a></li>
-	                    <li><a href="http://skype.com" target="_blank"><img src="icon/sky.png" alt="skype"></a></li>
-                	</ul>
-				</li>
-			</ul>
-		</nav>
+		
 	</footer>
 	<button class="btnScroll"  id="scrollup">
         <p class="maumoi">Go to top <img src="icon/imgTop1.png"></p>

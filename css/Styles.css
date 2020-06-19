@@ -320,8 +320,8 @@ ul>li>img{
 
 section.content1{
 	 /*margin: 0 auto;  chỉnh lề giao diện tự động */
-     width: 100%;
-     padding-top: 150px;
+     width: 80%;
+     padding-top: 120px;
      padding-bottom: 30px;
      margin: 50px;
      
@@ -354,12 +354,15 @@ section.content1 img{
 }
 .content1>div.right>ul>h1{
 	border-bottom: 2px solid black;
-	font-size: 25px;
+	font-size: 20px;
+}
+.content1>div.right>ul>p{
+	font-size: 18px;
 }
 .right>div>h2{
 	color: red;
-	font-size: 40px;
-	padding-top: 20px;
+	font-size: 30px;
+	padding-top: 0px;
 	margin-top: 0px;
 
 }
@@ -390,22 +393,64 @@ div.item{
 
 
 
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
 
 
+figure.zoom {
+  background-position: 50% 50%;
+  position: relative;
+  width: 25vw;
+  overflow: hidden;
+  cursor: zoom-in;/*
+  padding: 40px;*/
+}
 
+figure.zoom img:hover {
+  opacity: 0;
+}
+
+figure.zoom img {
+  transition: opacity 0.5s;
+  display: block;
+  width: 100%;/*
+  margin: 40px;*/
+  
+}
 .slideshow-container {
   
   position: relative;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .slideshow-container>img{
 	z-index: -1;
 }
 .mySlides {
   display: none;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
+
+
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -535,6 +580,7 @@ div.Imgpro>a>img{
 div.Title>h3{
 	font-size: 14px;
 	margin: 0;
+	color: red;
 }
 div.Title>li{
 	padding-bottom: 10px;
@@ -543,8 +589,8 @@ div.Title>li{
 }
 
 a.blue>span>img{
-	width: 25px;
-	height: 25px;
+	width: 1.5vw;
+	height: 1.5vw;
 }
 .contentListPro>div>h1{
 	width: 60%;
@@ -552,8 +598,83 @@ a.blue>span>img{
 	margin: auto;
 	border-bottom: 1px solid black;
 }
+div.Title{
+	flex-wrap: flex;
+}
+div.Title>p{
+	font-size: 12px;
+	color: grey;
+	margin: 0;
+	font-weight: normal;
+	text-decoration-line: line-through;
+}
 
 
 
+
+
+
+/*btnScroll*/
+
+
+.btnScroll {
+  display: none; 
+  position: fixed; 
+  bottom: 50px; 
+  right: -35px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: white; 
+  padding: 5px;
+  color: black; 
+  cursor: pointer;
+  border-radius: 5px; 
+  font-size: 16px; 
+  font-weight: bold;
+  transform: rotate(-90deg);
+  margin: 0;
+  text-align: center;
+}
+
+
+.btnScroll:hover {
+  background-color: lightgrey; /* Add a dark-grey background on hover */
+}
+p.maumoi{
+    font-family: cursive;
+    text-align: center;
+    margin: auto;
+
+}
+
+p.maumoi>img{
+	height: 14px;
+}
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
+
+
+
+/*"MAX&CO - Khăn choàng Double Sided","MUJOSH - Kính mát tròn khuyết cạnh Avant Garde","MUJOSH - Kính mát thông minh chống nắng tối ưu","TED BAKER - Túi đựng dụng cụ trang điểm Eulali","TED BAKER - Ốp lưng điện thoại iphone XR Abbieey","TED BAKER - Ốp lưng điện thoại iphone 6,7,8 Plus","MUJOSH - Kính mát thông minh chống nắng tối ưu","MUJOSH - Kính mát đa giác thời thượng","PUMA","Aojo - Kính mát bé gái hình con voi dễ thương","MUJOSH - Kính mát đa giác bo tròn thời trang","DSQUARED2 - Nón bóng chày Dsquared2 1964","DSQUARED2 - Nón nam thêu cá tính Logo Patch","DSQUARED2","Nón nam thêu cá tính Canada Plate","Leather and House Check High-top Sneakers","Leather, Vintage Check Cotton and Suede Tor Boots","Men's Disney x Gucci Rhyton","Men's Rhyton Gucci Worldwide","Women's Gucci Tennis 1977","Air Jordan 1 Mid SE","Air Jordan XXXIII","Nike Air Max 97","VANS CHECKERBOARD SLIP-ON CLASSIC BLACKWHITE","VANS OLD SKOOL CLASSIC BLACKWHITE","Chuck Taylor All Star Chuck Taylor Cheerful Hi Top","Chuck Taylor All Star Twisted Classic Logo Play Hi","Monogram Print E-canvas Arthur","Ultraboost SandL Star Wars","Giay UltraBoost MTL","Flight by VietMax","Ivory Black","LEBY LEMINO - Túi Sách Nữ","PEDRO - Hiệu ứng trong suốt","Woven Zip Around Wallet","Snake Print Woven Shoulder Bag","Glitter Top Handle Envelope Bag","Angular Flap Shoulder Bag","Túi Angular Flap Metallic Top Handle" ,"Túi Small Two-Tone Sculptural" ,"Túi Metal Top Handle Long Wallet" ,"Túi Woven Shoulder ","Túi Small Chunky Chain Strap ","Túi Grommet Strap Tote" ,"Túi Curved Tote","Túi Double Top Handle Tote","Túi Textured Crossbody","Túi Leather Saddle Bag","Túi Triangle Handle Tote Bag","Túi Metallic Accent Mini Wallet","Túi Pleated Drawstring Bag","Túi Textured Zip Around Wallet"*/
 
 

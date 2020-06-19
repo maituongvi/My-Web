@@ -3,7 +3,6 @@
     box-sizing: border-box; /* tính padding vào thành phần*/
     margin: 0px;
     padding: 0px;
-    font-family: Arial;
 }
 @font-face {
     font-family: fontviet;
@@ -15,7 +14,7 @@
   }
 
 *{
-    font-family:  serif, Georgia, Times, 'Times New Roman';
+    
     text-align: center;
 }
 
@@ -29,6 +28,7 @@
     width: 25%;
     display: flex;
     margin-top: 15px;
+
 }
 .tieude-giua{
     width: 60%;
@@ -44,17 +44,19 @@
 nav ul li{
     list-style-type: none;
     display: block;
- 
 }
 
 nav.thanhpho ul li a:hover{
-    color:aqua;
-    font-family: sans-serif;
+    color: black;
+   
+
 }
 nav.thanhpho ul li a{
-    color: black;
+    color: grey;
     text-decoration: none;
     padding: 10px 15px;
+    font-family: sans-serif;
+    font-size: 1vw;
     
   
 }
@@ -87,6 +89,7 @@ form{
     border: solid 1px #a7a7a7;
     padding: 8px 0 8px 15px;
     width: 100%;
+    outline:none;
    
 }
 
@@ -384,5 +387,117 @@ p.maumoi{
 
 
 
+.footer > ul > li > h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 18px;
+}
+
+.footer { 
+    background-color: black; 
+    height: 300px;
+    color: white;
+    font-family: Arial;
+}
+.footer >ul{
+    padding: 0;
+    margin:0;
+    display: flex;
+
+}
+.footer >ul>li{
+    width: 33%;
+}
+.footer >ul>li>img{
+    width: 50%;
+}
+.footer >ul>li>ul{
+    width: 50%;
+}
+.footer li{
+    list-style-type: none;
+}
+.linkConnection{
+    display: flex;
+    margin: auto;
+
+}
+.linkConnection > li{
+    padding-left: 15px;
+
+}
+.info{
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.info>p{
+    text-align: left;
+}
+img:hover{
+    cursor: pointer;
+}
+ul>li>img{
+    padding-left: 60px;
+}
 
 
+
+.btnScroll {
+  display: none; 
+  position: fixed; 
+  bottom: 50px; 
+  right: -35px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: white; 
+  padding: 10px;
+  color: black; 
+  cursor: pointer;
+  border-radius: 5px; 
+  font-size: 16px; 
+  font-weight: bold;
+  transform: rotate(-90deg);
+}
+
+.btnScroll:hover {
+  background-color: lightgrey; /* Add a dark-grey background on hover */
+}
+
+
+
+ul#suggestProductId {
+    text-align:left;
+    z-index:99999;
+    top:50px;
+    clear:both;
+    width:200px;
+    background-color:white;
+    margin:0px 20px 20px 20px;
+    padding:0px 7px;
+    list-style-type:none;
+    position:absolute;
+    border-radius: 0 0 20px 20px;
+    padding: 5px;
+    overflow-x: 200px;
+}
+
+ul#suggestProductId li {
+    cursor:pointer;
+    color: darkgrey;
+    font-family: Arial;
+    font-size: 12px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 5px;
+    margin: 0 5px 0 5px;
+}
+ul#suggestProductId li:hover{
+    background-color: grey;
+    color: white;
+
+
+
+}
